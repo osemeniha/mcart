@@ -1,10 +1,16 @@
 <?
-$PERM["customer-account"]["G7"]="D";
-$PERM["customer-account"]["*"]="D";
-$PERM["customer-account"]["G6"]="R";
 $PERM["seller-account"]["G6"]="D";
 $PERM["seller-account"]["*"]="D";
 $PERM["seller-account"]["G7"]="R";
+$PERM["seller-account"]["G8"]="R";
+$PERM["customer-account"]["G7"]="D";
+$PERM["customer-account"]["*"]="D";
+$PERM["customer-account"]["G6"]="R";
+$PERM["customer-account"]["G8"]="R";
+$PERM["ads"]["G8"]="W";
+$PERM["/"]["*"]="R";
+$PERM["bitrix"]["8"]="D";
+$PERM["bitrix"]["*"]="D";
 $PERM["search"]["5"]="W";
 $PERM["products"]["5"]="W";
 $PERM["services"]["5"]="W";
@@ -12,5 +18,4 @@ $PERM["news"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>

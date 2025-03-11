@@ -1,22 +1,3 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-use Bitrix\Main\Page\Asset;
-
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.3.1.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-migrate-3.0.1.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-ui.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/popper.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/owl.carousel.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/mediaelement-and-player.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.stellar.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.countdown.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.magnific-popup.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap-datepicker.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/aos.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
-?>
-
  <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -89,7 +70,6 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
   </footer>
 
   </div>
-<?$APPLICATION->ShowHeadScripts();?>
 </body>
 
 </html>

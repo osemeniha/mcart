@@ -41,7 +41,7 @@ $this->setFrameMode(true);
                                 <strong><?echo $arItem["PROPERTY_NUMBER_OF_FLOORS_VALUE"]?></strong>
                             </div>
                             <div class="col">
-                                <span><?= GetMessage('FLOORS') ?></span>
+                                <span><?= GetMessage('TOILETS') ?></span>
                                 <strong><?echo $arItem["PROPERTY_NUMBER_OF_TOILETS_VALUE"]?></strong>
                             </div>
                             <div class="col">

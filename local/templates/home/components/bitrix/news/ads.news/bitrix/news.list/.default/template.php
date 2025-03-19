@@ -22,14 +22,14 @@ $this->setFrameMode(true);
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
 
-    <div class="col-md-6 col-lg-4 mb-4">
+    <div class="col-md-6 col-lg-4 mb-4" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
         <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="prop-entry d-block">
             <figure>
                 <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?echo $arItem["NAME"]?>" class="img-fluid">
             </figure>
             <div class="prop-text">
                 <div class="inner">
-                    <span class="price rounded"><?=$arItem["PRICE"]["VALUE"]?></span>
+                    <span class="price rounded"><?=$arItem["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"]?></span>
                     <h3 class="title"><?echo $arItem["NAME"]?></h3>
                     <p class="location"><?echo $arItem["PREVIEW_TEXT"]?></p>
                 </div>

@@ -27,14 +27,14 @@ if(!empty($arResult["OK_MESSAGE"]))
     <div class="row form-group">
         <div class="col-md-12 mb-3 mb-md-0">
             <label class="font-weight-bold" for="fullname"><?=GetMessage("MFT_NAME")?></label>
-            <input type="text" id="fullname" class="form-control" placeholder="<?=GetMessage("MFT_NAME")?>"
+            <input type="text" name="user_name" class="form-control" placeholder="<?=GetMessage("MFT_NAME")?>"
                    value="<?=$arResult["AUTHOR_NAME"]?>">
         </div>
     </div>
     <div class="row form-group">
         <div class="col-md-12">
             <label class="font-weight-bold" for="email"><?=GetMessage("MFT_EMAIL")?></label>
-            <input type="email" id="email" class="form-control" placeholder="<?=GetMessage("MFT_EMAIL")?>"
+            <input type="email" name="user_email" class="form-control" placeholder="<?=GetMessage("MFT_EMAIL")?>"
                    value="<?=$arResult["AUTHOR_EMAIL"]?>" >
         </div>
     </div>
@@ -42,7 +42,7 @@ if(!empty($arResult["OK_MESSAGE"]))
     <div class="row form-group">
         <div class="col-md-12">
             <label class="font-weight-bold" for="message"><?=GetMessage("MFT_MESSAGE")?></label>
-            <textarea name="message" id="message" cols="30" rows="5" class="form-control"
+            <textarea name="MESSAGE" cols="30" rows="5" class="form-control"
                       placeholder="<?=GetMessage("MFT_MESSAGE")?>"><?=($arResult["MESSAGE"] ?? '')?></textarea>
         </div>
     </div>
@@ -61,7 +61,7 @@ if(!empty($arResult["OK_MESSAGE"]))
 
     <div class="row form-group">
         <div class="col-md-12">
-            <input type="submit" value="<?=GetMessage("MFT_SUBMIT")?>" class="btn btn-primary  py-2 px-4 rounded-0">
+            <input type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>" class="btn btn-primary  py-2 px-4 rounded-0">
         </div>
     </div>
 </form>
